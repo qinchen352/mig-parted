@@ -7015,7 +7015,7 @@ nvmlReturn_t DECLDIR nvmlGetBlacklistDeviceInfoByIndex(unsigned int index, nvmlB
 #define NVML_GPU_INSTANCE_PROFILE_4_SLICE 0x3
 #define NVML_GPU_INSTANCE_PROFILE_7_SLICE 0x4
 #define NVML_GPU_INSTANCE_PROFILE_8_SLICE 0x5
-#define NVML_GPU_INSTANCE_PROFILE_COUNT   0x6
+#define NVML_GPU_INSTANCE_PROFILE_COUNT   0x5
 
 typedef struct nvmlGpuInstancePlacement_st
 {
