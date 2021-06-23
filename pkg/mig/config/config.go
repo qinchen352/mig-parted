@@ -234,7 +234,7 @@ func (m *nvmlMigConfigManager) ClearMigConfig(gpu int) error {
 		return fmt.Errorf("MIG mode disabled")
 	}
 
-	for i := 0; i < nvml.GPU_INSTANCE_PROFILE_COUNT; i++ {
+	for i := 0; i < 5; i++ {
 		giProfileInfo, ret := device.GetGpuInstanceProfileInfo(i)
 		if ret.Value() == nvml.ERROR_NOT_SUPPORTED {
 			continue

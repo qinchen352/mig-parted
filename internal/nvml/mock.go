@@ -349,7 +349,7 @@ func (d *MockA100Device) GetMigMode() (int, int, Return) {
 }
 
 func (d *MockA100Device) GetGpuInstanceProfileInfo(giProfileId int) (GpuInstanceProfileInfo, Return) {
-	if giProfileId < 0 || giProfileId >= GPU_INSTANCE_PROFILE_COUNT {
+	if giProfileId < 0 || giProfileId >= 5 {
 		return GpuInstanceProfileInfo{}, MockReturn(ERROR_INVALID_ARGUMENT)
 	}
 
